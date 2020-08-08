@@ -36,7 +36,7 @@ function draw() {
   background(0);
   Engine.update(engine); 
   if(frameCount%60===0){
-     particle.push(new  Particle(200,20,10));
+     particle.push(new  Particle(random(10,400),20,10));
   }
    platform.display();
    for(var i =0;i<divisions.length;i=i+1) {

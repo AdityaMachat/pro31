@@ -1,7 +1,7 @@
 class Particle{
     constructor(x,y,r){
         var options={
-            restitution=0.4
+            restitution:0.4
         }
         this.r=r;
         this.body=Bodies.circle(x,y,r,options);
@@ -15,7 +15,7 @@ class Particle{
         push();
         translate(pos.x,pos.y);
         rotate(angle);
-        nostroke();
+        noStroke();
         fill(this.color);
         ellipseMode(RADIUS);
         ellipse(0,0,this.r,this.r);
